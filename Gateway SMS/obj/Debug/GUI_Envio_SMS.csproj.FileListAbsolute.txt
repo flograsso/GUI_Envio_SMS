@@ -1,0 +1,3 @@
+C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\GUI_Envio_SMS.csprojResolveAssemblyReference.cache
+C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway_SMS.MainForm.resources
+C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\GUI_Envio_SMS.csproj.GenerateResource.Cache
