@@ -21,7 +21,6 @@ namespace Gateway_SMS
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label2;
-		private System.IO.Ports.SerialPort serialPort1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label AT_label;
 		private System.Windows.Forms.Label label5;
@@ -39,7 +38,6 @@ namespace Gateway_SMS
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.TextBox codArea_textbox;
-		private System.Windows.Forms.ProgressBar progressBar1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -62,7 +60,6 @@ namespace Gateway_SMS
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.IMEI_textBox = new System.Windows.Forms.TextBox();
@@ -73,13 +70,11 @@ namespace Gateway_SMS
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.SMSReady_label = new System.Windows.Forms.Label();
 			this.CSQ_label = new System.Windows.Forms.Label();
 			this.AT_label = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.progressBar1 = new System.Windows.Forms.ProgressBar();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.codArea_textbox = new System.Windows.Forms.TextBox();
@@ -126,7 +121,6 @@ namespace Gateway_SMS
 			this.label5.Size = new System.Drawing.Size(57, 23);
 			this.label5.TabIndex = 6;
 			this.label5.Text = "IMEI:";
-			this.label5.Click += new System.EventHandler(this.Label5Click);
 			// 
 			// button1
 			// 
@@ -178,11 +172,6 @@ namespace Gateway_SMS
 			this.label1.Size = new System.Drawing.Size(57, 23);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Conexion:";
-			this.label1.Click += new System.EventHandler(this.Label1Click);
-			// 
-			// serialPort1
-			// 
-			this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.SerialPort1DataReceived);
 			// 
 			// panel2
 			// 
@@ -198,30 +187,28 @@ namespace Gateway_SMS
 			// 
 			// SMSReady_label
 			// 
-			this.SMSReady_label.Location = new System.Drawing.Point(-1, 65);
+			this.SMSReady_label.Location = new System.Drawing.Point(0, 65);
 			this.SMSReady_label.Name = "SMSReady_label";
 			this.SMSReady_label.Size = new System.Drawing.Size(179, 23);
 			this.SMSReady_label.TabIndex = 3;
 			// 
 			// CSQ_label
 			// 
-			this.CSQ_label.Location = new System.Drawing.Point(-1, 42);
+			this.CSQ_label.Location = new System.Drawing.Point(0, 42);
 			this.CSQ_label.Name = "CSQ_label";
 			this.CSQ_label.Size = new System.Drawing.Size(135, 23);
 			this.CSQ_label.TabIndex = 2;
 			// 
 			// AT_label
 			// 
-			this.AT_label.Location = new System.Drawing.Point(-1, 19);
+			this.AT_label.Location = new System.Drawing.Point(0, 19);
 			this.AT_label.Name = "AT_label";
 			this.AT_label.Size = new System.Drawing.Size(135, 23);
 			this.AT_label.TabIndex = 0;
-			this.AT_label.Click += new System.EventHandler(this.Label5Click);
 			// 
 			// panel3
 			// 
 			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel3.Controls.Add(this.progressBar1);
 			this.panel3.Controls.Add(this.label10);
 			this.panel3.Controls.Add(this.label9);
 			this.panel3.Controls.Add(this.codArea_textbox);
@@ -237,14 +224,6 @@ namespace Gateway_SMS
 			this.panel3.Size = new System.Drawing.Size(295, 187);
 			this.panel3.TabIndex = 2;
 			this.panel3.Visible = false;
-			// 
-			// progressBar1
-			// 
-			this.progressBar1.Location = new System.Drawing.Point(4, 159);
-			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(284, 23);
-			this.progressBar1.TabIndex = 11;
-			this.progressBar1.Visible = false;
 			// 
 			// label10
 			// 
@@ -281,7 +260,7 @@ namespace Gateway_SMS
 			// 
 			// Enviar
 			// 
-			this.Enviar.Location = new System.Drawing.Point(100, 108);
+			this.Enviar.Location = new System.Drawing.Point(111, 113);
 			this.Enviar.Name = "Enviar";
 			this.Enviar.Size = new System.Drawing.Size(75, 23);
 			this.Enviar.TabIndex = 6;
@@ -342,6 +321,7 @@ namespace Gateway_SMS
 			this.Name = "MainForm";
 			this.Text = "Gateway SMS";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFormFormClosed);
+			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
