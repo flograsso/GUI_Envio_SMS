@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 using System.IO.Ports;
 using MySql.Data.MySqlClient;
 
-namespace Gateway_SMS
+namespace GUI_Envio_SMS
 {
 	/// <summary>
 	/// Description of MainForm.
@@ -44,7 +44,9 @@ namespace Gateway_SMS
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
 
+		
 		void Button1Click(object sender, EventArgs e)
 		{
 			bool OK= true;

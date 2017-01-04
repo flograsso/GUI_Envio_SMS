@@ -9,7 +9,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Gateway_SMS
+namespace GUI_Envio_SMS
 {
 	/// <summary>
 	/// Class with program entry point.

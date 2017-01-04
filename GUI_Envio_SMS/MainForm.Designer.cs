@@ -6,7 +6,7 @@
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
-namespace Gateway_SMS
+namespace GUI_Envio_SMS
 {
 	partial class MainForm
 	{
@@ -319,7 +319,7 @@ namespace Gateway_SMS
 			this.Controls.Add(this.panel1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainForm";
-			this.Text = "Gateway SMS";
+			this.Text = "GUI_Envio_SMS";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFormFormClosed);
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.panel1.ResumeLayout(false);

@@ -1,8 +1,0 @@
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\bin\Debug\Gateway SMS.exe.config
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\bin\Debug\Gateway SMS.exe
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\bin\Debug\Gateway SMS.pdb
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway SMS.csprojResolveAssemblyReference.cache
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway_SMS.MainForm.resources
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway SMS.csproj.GenerateResource.Cache
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway SMS.exe
-C:\Users\SoporteSEM\Documents\SharpDevelop Projects\Gateway SMS\Gateway SMS\obj\Debug\Gateway SMS.pdb
